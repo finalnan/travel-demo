@@ -1,0 +1,132 @@
+.create__container {
+  height: calc(100vh - 65px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  padding-bottom: 5rem;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #444;
+    border-radius: 22px;
+    padding: 1.5rem;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .inputWrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-bottom: 0.5rem;
+
+      label {
+        margin-right: 15px;
+        width: 33%;
+      }
+
+      input {
+        padding: 0.5rem;
+        width: 77.5%;
+        border-radius: 8px;
+        border: 1px solid rgb(170, 165, 165);
+
+        &:focus {
+          outline: none;
+          border-color: rgb(99, 92, 92);
+        }
+      }
+    }
+
+    .inputWrapper__img {
+      width: 400px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+
+      .file {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+      }
+
+      span {
+        display: inline-block;
+        justify-self: flex-end;
+        padding: 0.5rem 1rem;
+        background-color: teal;
+        color: #fff;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: all 150ms;
+        border-radius: 16px;
+        margin: 0.1rem 0.25rem;
+
+        &:hover {
+          background-color: #fff;
+          color: teal;
+          border-color: teal;
+        }
+      }
+      .img__title {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 14px;
+
+        .icon {
+          cursor: pointer;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .btn__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+
+      button {
+        width: 50%;
+        background-color: #cea600;
+        color: #fff;
+        padding: 0.75rem 1.25rem;
+        border-radius: 12px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: all 150ms;
+        margin-top: 1rem;
+
+        &:hover {
+          background-color: #fff;
+          color: #cea600;
+          border-color: #cea600;
+        }
+      }
+
+      .error {
+        height: 125px;
+        width: 300px;
+        text-align: center;
+        border-radius: 20px;
+        line-height: 1.5rem;
+        padding: 3rem 5rem;
+        color: #fff;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        top: 5rem;
+        right: 5rem;
+      }
+    }
+  }
+}
